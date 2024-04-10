@@ -1,0 +1,82 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Data</title>
+    <style>
+        <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type="text"]:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+
+    button[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+    </style>
+</head>
+<body>
+    <h2>Edit Data</h2>
+    <form action="/track/formm/check.php" method="post">
+        <input type = "hidden" value="">
+        <label for="inputField1">Date and time 1:</label><br>
+        <input type="text" id="inputField1" name="inputField1" value="07 4 2024 3:26AM"><br><br>
+        <label for="inputField2">Date and time 2:</label><br>
+        <input type="text" id="inputField2" name="inputField2" value="07 4 2024 3:32AM"><br><br>
+        <label for="inputField3">Amount paid:</label><br>
+        <input type="text" id="inputField3" name="inputField3" value="39000.00 NGN"><br><br>
+        <label for="inputField4">Payment method used:</label><br>
+        <input type="text" id="inputField4" name="inputField4" value="Bank Transfer "><br><br>
+        <label for="inputField5">Track number:</label><br>
+        <input readonly type="text" id="inputField5" name="inputField5" value="YY9-38K-4AP"><br><br>
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>
